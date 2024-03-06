@@ -1,5 +1,7 @@
 {
-	"variants": {
-		"normal": {"model": "projectex:compressed_refined_link"}
-	}
+  "variants": {
+    "normal": {
+      "model": "projectex:compressed_refined_link"
+    }
+  }
 }

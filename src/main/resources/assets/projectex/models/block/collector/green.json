@@ -1,6 +1,6 @@
 {
-	"parent": "projectex:block/collector/collector",
-	"textures": {
-		"texture": "projectex:blocks/collectors/green"
-	}
+  "parent": "projectex:block/collector/collector",
+  "textures": {
+    "texture": "projectex:blocks/collectors/green"
+  }
 }

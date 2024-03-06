@@ -1,17 +1,24 @@
 [
-	{
-		"modid": "projectex",
-		"name": "Project EX",
-		"description": "",
-		"version": "${version}",
-		"mcversion": "${mcversion}",
-		"url": "http://minecraft.curseforge.com/projects/project-ex",
-		"updateUrl": "",
-		"authorList": ["LatvianModder"],
-		"credits": "",
-		"logoFile": "assets/projectex/textures/logo.png",
-		"screenshots": [],
-		"parent": "",
-		"dependencies": []
-	}
+  {
+    "modid": "projectex",
+    "name": "Project EX:Unofficial",
+    "description": "An unofficial edition of Project EX.",
+    "version": "${version}",
+    "url": "",
+    "updateUrl": "",
+    "authorList": [
+      "Shepherd23333"
+    ],
+    "credits": "",
+    "logoFile": "assets/projectex/textures/logo.png",
+    "screenshots": [],
+    "useDependencyInformation": true,
+    "dependencies": [
+      "projecte"
+    ],
+    "requiredMods": [
+      "projecte@[${version}]"
+    ],
+    "mcversion": "1.12.2"
+  }
 ]

@@ -1,5 +1,7 @@
 {
-	"variants": {
-		"normal": {"model": "projectex:alchemy_table"}
-	}
+  "variants": {
+    "normal": {
+      "model": "projectex:alchemy_table"
+    }
+  }
 }

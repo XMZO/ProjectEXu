@@ -25,7 +25,7 @@ tile.projectex.collector.orange.name=Orange Matter Collector [MK13]
 tile.projectex.collector.white.name=White Matter Collector [MK14]
 tile.projectex.collector.fading.name=Fading Matter Collector [MK15]
 
-tile.projectex.collector.final.name=The Final Collector
+tile.projectex.collector.final.name=The Final Collector [MK16]
 tile.projectex.collector.tooltip=Server TPS friendly. Generates EMC only once a second.
 tile.projectex.collector.emc_produced=Produced EMC: %s/s
 tile.projectex.collector.compressed=Compressed, Crafting Material
@@ -46,7 +46,7 @@ tile.projectex.relay.orange.name=Orange Matter Relay [MK13]
 tile.projectex.relay.white.name=White Matter Relay [MK14]
 tile.projectex.relay.fading.name=Fading Matter Relay [MK15]
 
-tile.projectex.relay.final.name=The Final Relay
+tile.projectex.relay.final.name=The Final Relay [MK16]
 tile.projectex.relay.tooltip=Server TPS friendly. Transfers EMC only once a second.
 tile.projectex.relay.max_transfer=Max EMC Transfer: %s/s
 tile.projectex.relay.relay_bonus=Relay Bonus: %s/s
@@ -67,7 +67,7 @@ tile.projectex.power_flower.orange.name=Orange Matter Power Flower Bonsai Pot [M
 tile.projectex.power_flower.white.name=White Matter Power Flower Bonsai Pot [MK14]
 tile.projectex.power_flower.fading.name=Fading Matter Power Flower Bonsai Pot [MK15]
 
-tile.projectex.power_flower.final.name=The Final Power Flower Bonsai Pot
+tile.projectex.power_flower.final.name=The Final Power Flower Bonsai Pot [MK16]
 
 tile.projectex.stone_table.name=Stone Transmutation Table
 tile.projectex.stone_table.learn=Learn

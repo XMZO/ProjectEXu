@@ -1,0 +1,145 @@
+itemGroup.projectex=等价交换增强
+
+tile.projectex.energy_link.name=基础EMC接口
+tile.projectex.energy_link.tooltip=你可以将这个方块和收集器放在一起来增加你转化桌里的EMC。
+#You can use this block to add EMC to your Transmutation Table using Collectors.
+tile.projectex.personal_link.name=个人EMC接口
+tile.projectex.personal_link.tooltip=与基础EMC接口相同，同时允许物品的输入输出。
+#Same as Basic Energy EMC Link, but also allows to import and export items.
+tile.projectex.refined_link.name=精致EMC接口
+tile.projectex.refined_link.tooltip=与个人EMC接口相同，但拥有1个输入槽和9个输出槽。为了与类似精致存储的系统一起使用而设计。它还可以从输入槽中学习物品。
+#Same as Personal EMC Link, but has 1 input slot and 9 output slots. Designed to be used with Refined Storage-like systems. It also learns items from input slots.
+tile.projectex.compressed_refined_link.name=压缩精致EMC接口
+tile.projectex.compressed_refined_link.tooltip=与精致EMC接口相同，但拥有54个输出槽。
+#Same as Refined EMC Link, but has 54 output slots.
+
+tile.projectex.collector.basic.name=基础收集器 [MK1]
+tile.projectex.collector.dark.name=暗物质收集器 [MK2]
+tile.projectex.collector.red.name=红物质收集器 [MK3]
+tile.projectex.collector.magenta.name=品红物质收集器 [MK4]
+tile.projectex.collector.pink.name=粉物质收集器 [MK5]
+tile.projectex.collector.purple.name=紫物质收集器 [MK6]
+tile.projectex.collector.violet.name=紫罗兰物质收集器 [MK7]
+tile.projectex.collector.blue.name=蓝物质收集器 [MK8]
+tile.projectex.collector.cyan.name=青物质收集器 [MK9]
+tile.projectex.collector.green.name=绿物质收集器 [MK10]
+tile.projectex.collector.lime.name=黄绿物质收集器 [MK11]
+tile.projectex.collector.yellow.name=黄物质收集器 [MK12]
+tile.projectex.collector.orange.name=橙物质收集器 [MK13]
+tile.projectex.collector.white.name=白物质收集器 [MK14]
+tile.projectex.collector.fading.name=渐消物质收集器 [MK15]
+
+tile.projectex.collector.final.name=终极收集器 [MK16]
+tile.projectex.collector.tooltip=对服务器TPS友好。1秒只生产一次EMC。
+tile.projectex.collector.emc_produced=提供EMC: %s/s
+tile.projectex.collector.compressed=压缩的合成材料
+
+tile.projectex.relay.basic.name=基础继电器 [MK1]
+tile.projectex.relay.dark.name=暗物质继电器 [MK2]
+tile.projectex.relay.red.name=红物质继电器 [MK3]
+tile.projectex.relay.magenta.name=品红物质继电器 [MK4]
+tile.projectex.relay.pink.name=粉物质继电器 [MK5]
+tile.projectex.relay.purple.name=紫物质继电器 [MK6]
+tile.projectex.relay.violet.name=紫罗兰物质继电器 [MK7]
+tile.projectex.relay.blue.name=蓝物质继电器 [MK8]
+tile.projectex.relay.cyan.name=青物质继电器 [MK9]
+tile.projectex.relay.green.name=绿物质继电器 [MK10]
+tile.projectex.relay.lime.name=黄绿物质继电器 [MK11]
+tile.projectex.relay.yellow.name=黄物质继电器 [MK12]
+tile.projectex.relay.orange.name=橙物质继电器 [MK13]
+tile.projectex.relay.white.name=白物质继电器 [MK14]
+tile.projectex.relay.fading.name=渐消物质继电器 [MK15]
+
+tile.projectex.relay.final.name=终极继电器 [MK16]
+tile.projectex.relay.tooltip=对服务器TPS友好。1秒只传输一次EMC。
+tile.projectex.relay.max_transfer=最大EMC传输: %s/s
+tile.projectex.relay.relay_bonus=继电器加成: %s/s
+
+tile.projectex.power_flower.basic.name=基础力量之花盆栽 [MK1]
+tile.projectex.power_flower.dark.name=暗物质力量之花盆栽 [MK2]
+tile.projectex.power_flower.red.name=红物质力量之花盆栽 [MK3]
+tile.projectex.power_flower.magenta.name=品红物质力量之花盆栽 [MK4]
+tile.projectex.power_flower.pink.name=粉物质力量之花盆栽 [MK5]
+tile.projectex.power_flower.purple.name=紫物质力量之花盆栽 [MK6]
+tile.projectex.power_flower.violet.name=紫罗兰物质力量之花盆栽 [MK7]
+tile.projectex.power_flower.blue.name=蓝物质力量之花盆栽 [MK8]
+tile.projectex.power_flower.cyan.name=青物质力量之花盆栽 [MK9]
+tile.projectex.power_flower.green.name=绿物质力量之花盆栽 [MK10]
+tile.projectex.power_flower.lime.name=黄绿物质力量之花盆栽 [MK11]
+tile.projectex.power_flower.yellow.name=黄物质力量之花盆栽 [MK12]
+tile.projectex.power_flower.orange.name=橙物质力量之花盆栽 [MK13]
+tile.projectex.power_flower.white.name=白物质力量之花盆栽 [MK14]
+tile.projectex.power_flower.fading.name=渐消物质力量之花盆栽 [MK15]
+
+tile.projectex.power_flower.final.name=终极力量之花盆栽 [MK16]
+
+tile.projectex.stone_table.name=石质转化桌
+tile.projectex.stone_table.learn=学习
+tile.projectex.stone_table.unlearn=遗忘
+tile.projectex.alchemy_table.name=炼金术桌
+
+item.projectex.magnum_star_ein.name=一级马格南能量之星
+item.projectex.magnum_star_zwei.name=二级马格南能量之星
+item.projectex.magnum_star_drei.name=三级马格南能量之星
+item.projectex.magnum_star_vier.name=四级马格南能量之星
+item.projectex.magnum_star_sphere.name=五级马格南能量之星
+item.projectex.magnum_star_omega.name=六级马格南能量之星
+item.projectex.colossal_star_ein.name=一级终焉能量之星
+item.projectex.colossal_star_zwei.name=二级终焉能量之星
+item.projectex.colossal_star_drei.name=三级终焉能量之星
+item.projectex.colossal_star_vier.name=四级终焉能量之星
+item.projectex.colossal_star_sphere.name=五级终焉能量之星
+item.projectex.colossal_star_omega.name=六级终焉能量之星
+item.projectex.matter.magenta.name=品红物质
+item.projectex.matter.pink.name=粉物质
+item.projectex.matter.purple.name=紫物质
+item.projectex.matter.violet.name=紫罗兰物质
+item.projectex.matter.blue.name=蓝物质
+item.projectex.matter.cyan.name=青物质
+item.projectex.matter.green.name=绿物质
+item.projectex.matter.lime.name=黄绿物质
+item.projectex.matter.yellow.name=黄物质
+item.projectex.matter.orange.name=橙物质
+item.projectex.matter.white.name=白物质
+item.projectex.matter.gray.name=Gray 物质
+item.projectex.matter.fading.name=渐消物质
+item.projectex.matter.clay.name=黏土物质
+item.projectex.final_star_shard.name=终极之星碎片
+item.projectex.final_star.name=终极之星
+item.projectex.final_star.tooltip=在台座旁放一个箱子，将物品丢在上面来无限复制它。
+#Place a chest next to Pedestal and drop item on top of it to clone it infinitely.
+item.projectex.knowledge_sharing_book.name=知识共享之书
+item.projectex.arcane_tablet.name=奥术转化桌
+
+projectex=等价交换增强通用
+projectex.general.enable_stone_table_whitelist=启用石质转化桌白名单
+projectex.general.stone_table_whitelist=石质转化桌白名单
+projectex.general.blacklist_power_flower_from_watch=将花盆列入怀表的黑名单
+projectex.general.final_star_copy_any_item=终极之星可以复制任何物品
+projectex.general.final_star_copy_nbt=终极之星可以复制（物品上的）NBT
+projectex.general.emc_link_max_out=EMC接口最大物品输出
+
+projectex.tiers.collector_output=收集器输出
+projectex.tiers.relay_bonus=继电器加成
+projectex.tiers.relay_transfer=继电器传输
+
+projectex.items=物品
+projectex.items.stars=能量之星
+projectex.items.collectors=收集器
+projectex.items.relays=继电器
+projectex.items.power_flowers=花盆
+projectex.items.tome=炼金术密卷配方
+
+projectex_client=等价交换增强客户端
+projectex.general.emc_screen_position=EMC显示位置
+projectex.general.search_type=搜索类型
+projectex.general.search_type.normal=标准
+projectex.general.search_type.autoselected=自动选择
+projectex.general.search_type.normal_jei_sync=标准(JEI同步)
+projectex.general.search_type.autoselected_jei_sync=自动选择(JEI同步)
+
+gui.stone_table.cant_use=不能在石质转化桌上使用此物品！
+#Can't use this item in Stone Table!
+gui.arcane_tablet.rotate=旋转
+gui.arcane_tablet.balance=均分/分散
+gui.arcane_tablet.clear=清空

@@ -1,6 +1,6 @@
 {
-	"parent": "item/generated",
-	"textures": {
-		"layer0": "projectex:items/matters/gray"
-	}
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "projectex:items/matters/gray"
+  }
 }
