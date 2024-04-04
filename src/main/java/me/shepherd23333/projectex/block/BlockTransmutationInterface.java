@@ -1,7 +1,6 @@
 package me.shepherd23333.projectex.block;
 
-import me.shepherd23333.projectex.gui.ProjectEXGuiHandler;
-import me.shepherd23333.projectex.tile.TileLink;
+import me.shepherd23333.projectex.tile.TileTransmutationInterface;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.MapColor;
 import net.minecraft.block.material.Material;
@@ -16,13 +15,11 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.text.TextComponentString;
 import net.minecraft.world.World;
 
-/**
- * @author LatvianModder
- */
-public class BlockLink extends Block {
-    public BlockLink() {
+public class BlockTransmutationInterface extends Block {
+    public BlockTransmutationInterface() {
         super(Material.ROCK, MapColor.BLACK);
         setHardness(2F);
+        setLightLevel(15);
     }
 
     @Override
@@ -32,21 +29,16 @@ public class BlockLink extends Block {
 
     @Override
     public TileEntity createTileEntity(World world, IBlockState state) {
-        return new TileLink(0, 0);
+        return new TileTransmutationInterface();
     }
 
     @Override
     public boolean onBlockActivated(World world, BlockPos pos, IBlockState state, EntityPlayer player, EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ) {
         if (!world.isRemote) {
             TileEntity tileEntity = world.getTileEntity(pos);
-
-            if (tileEntity instanceof TileLink)
-                if (player.getUniqueID().equals(((TileLink) tileEntity).owner))
-                    ProjectEXGuiHandler.open(player, ProjectEXGuiHandler.LINK, pos.getX(), pos.getY(), pos.getZ());
-                else
-                    player.sendStatusMessage(new TextComponentString(((TileLink) tileEntity).name), true);
+            if (tileEntity instanceof TileTransmutationInterface)
+                player.sendStatusMessage(new TextComponentString(((TileTransmutationInterface) tileEntity).name), true);
         }
-
         return true;
     }
 
@@ -54,9 +46,9 @@ public class BlockLink extends Block {
     public void onBlockPlacedBy(World world, BlockPos pos, IBlockState state, EntityLivingBase placer, ItemStack stack) {
         TileEntity tileEntity = world.getTileEntity(pos);
 
-        if (tileEntity instanceof TileLink) {
-            ((TileLink) tileEntity).owner = placer.getUniqueID();
-            ((TileLink) tileEntity).name = placer.getName();
+        if (tileEntity instanceof TileTransmutationInterface) {
+            ((TileTransmutationInterface) tileEntity).owner = placer.getUniqueID();
+            ((TileTransmutationInterface) tileEntity).name = placer.getName();
             tileEntity.markDirty();
         }
     }

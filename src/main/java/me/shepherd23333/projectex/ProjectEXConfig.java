@@ -39,9 +39,8 @@ public class ProjectEXConfig {
 
     @SubscribeEvent
     public static void onConfigChanged(ConfigChangedEvent.OnConfigChangedEvent event) {
-        if (event.getModID().equals(ProjectEX.MOD_ID)) {
+        if (event.getModID().equals(ProjectEX.MOD_ID))
             sync();
-        }
     }
 
     private static class ItemKey {
@@ -136,9 +135,8 @@ public class ProjectEXConfig {
         private HashMap<ItemKey, Boolean> stoneTableCache = null;
 
         public boolean isStoneTableWhitelisted(ItemStack stack) {
-            if (!enable_stone_table_whitelist) {
+            if (!enable_stone_table_whitelist)
                 return true;
-            }
 
             if (stoneTableItemList == null) {
                 stoneTableItemList = new HashSet<>();
@@ -161,21 +159,18 @@ public class ProjectEXConfig {
                 for (String s : general.stone_table_whitelist) {
                     String[] s1 = s.trim().split("@", 2);
 
-                    if (s1[0].isEmpty()) {
+                    if (s1[0].isEmpty())
                         continue;
-                    }
 
                     if (s1.length == 1 && s1[0].startsWith("oredict:")) {
                         String s2 = s1[0].substring(8);
 
-                        if (s2.isEmpty()) {
+                        if (s2.isEmpty())
                             continue;
-                        }
 
                         for (Map.Entry<String, HashSet<ItemKey>> entry : oreDict.entrySet()) {
-                            if (!entry.getValue().isEmpty() && entry.getKey().startsWith(s2)) {
+                            if (!entry.getValue().isEmpty() && entry.getKey().startsWith(s2))
                                 stoneTableItemList.addAll(entry.getValue());
-                            }
                         }
                     } else {
                         Item item = Item.getByNameOrId(s1[0]);
@@ -190,9 +185,8 @@ public class ProjectEXConfig {
                 }
             }
 
-            if (stoneTableCache == null) {
+            if (stoneTableCache == null)
                 stoneTableCache = new HashMap<>();
-            }
 
             ItemKey key = new ItemKey();
             key.item = stack.getItem();
@@ -202,12 +196,11 @@ public class ProjectEXConfig {
             if (b == null) {
                 b = false;
 
-                for (ItemKey key1 : stoneTableItemList) {
+                for (ItemKey key1 : stoneTableItemList)
                     if (key.item == key1.item && (key.metadata == key1.metadata || key1.metadata == OreDictionary.WILDCARD_VALUE)) {
                         b = true;
                         break;
                     }
-                }
 
                 stoneTableCache.put(key, b);
             }
@@ -247,40 +240,33 @@ public class ProjectEXConfig {
         @Config.LangKey("projectex.tiers.relay_transfer")
         @Config.RangeDouble(min = 1D)
         public double relay_transfer;
-        private BigDecimal co, rb, rt;
 
         public BlockTier(double col, double rbs, double rtf) {
-            /*collector_output = col;
+            collector_output = col;
             relay_bonus = rbs;
-            relay_transfer = rtf;*/
-            co = new BigDecimal(col);
-            rb = new BigDecimal(rbs);
-            rt = new BigDecimal(rtf);
+            relay_transfer = rtf;
         }
 
         public BlockTier(BigInteger col, BigInteger rbs, BigInteger rtf) {
-            /*collector_output =col.doubleValue();
+            collector_output = col.doubleValue();
             relay_bonus =rbs.doubleValue();
-            relay_transfer =rtf.doubleValue();*/
-            co = new BigDecimal(col);
-            rb = new BigDecimal(rbs);
-            rt = new BigDecimal(rtf);
+            relay_transfer = rtf.doubleValue();
         }
 
         public BigDecimal getCo() {
-            return co;
+            return BigDecimal.valueOf(collector_output);
         }
 
         public BigDecimal getRb() {
-            return rb;
+            return BigDecimal.valueOf(relay_bonus);
         }
 
         public BigDecimal getRt() {
-            return rt;
+            return BigDecimal.valueOf(relay_transfer);
         }
 
         public BigDecimal powerFlowerOutput() {
-            return co.multiply(BigDecimal.valueOf(18)).add(rb.multiply(BigDecimal.valueOf(30)));
+            return getCo().multiply(BigDecimal.valueOf(18)).add(getRb().multiply(BigDecimal.valueOf(30)));
         }
     }
 

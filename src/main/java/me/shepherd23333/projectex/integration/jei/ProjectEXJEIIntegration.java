@@ -38,6 +38,7 @@ public class ProjectEXJEIIntegration implements IModPlugin {
         addInfo(registry, ProjectEXItems.PERSONAL_LINK);
         addInfo(registry, ProjectEXItems.REFINED_LINK);
         addInfo(registry, ProjectEXItems.COMPRESSED_REFINED_LINK);
+        addInfo(registry, ProjectEXItems.TRANSMUTATION_INTERFACE);
 
         addInfo(registry, ProjectEXItems.FINAL_STAR);
     }

@@ -48,14 +48,11 @@ public class ProjectEX {
 
     @Mod.EventHandler
     public void onInit(FMLInitializationEvent event) {
-        if (FMLCommonHandler.instance().getSide() == Side.CLIENT) {
-
+        if (FMLCommonHandler.instance().getSide() == Side.CLIENT)
             ProjectEXKeyBindings.init();
-        }
 
-        if (ProjectEXConfig.general.blacklist_power_flower_from_watch) {
+        if (ProjectEXConfig.general.blacklist_power_flower_from_watch)
             FMLInterModComms.sendMessage(PECore.MODID, "timewatchblacklist", TilePowerFlower.class.getName());
-        }
 
         AlchemyTableRecipes.INSTANCE.addDefaultRecipes();
     }

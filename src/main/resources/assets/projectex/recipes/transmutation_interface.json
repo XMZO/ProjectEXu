@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "projectex:link",
+  "conditions": [
+    {
+      "type": "minecraft:item_exists",
+      "item": "projectex:transmutation_interface"
+    }
+  ],
+  "result": {
+    "item": "transmutation_interface"
+  },
+  "pattern": [
+    "LLL",
+    "LBL",
+    "LLL"
+  ],
+  "key": {
+    "L": {
+      "item": "compressed_refined_link"
+    },
+    "B": {
+      "item": "knowledge_sharing_book"
+    }
+  }
+}

@@ -51,10 +51,12 @@ public class ProjectEXEventHandler {
             r.register(withName(new BlockLinkMK1(), "personal_link"));
             r.register(withName(new BlockLinkMK2(), "refined_link"));
             r.register(withName(new BlockLinkMK3(), "compressed_refined_link"));
+            r.register(withName(new BlockTransmutationInterface(), "transmutation_interface"));
             GameRegistry.registerTileEntity(TileEnergyLink.class, new ResourceLocation(ProjectEX.MOD_ID, "energy_link"));
             GameRegistry.registerTileEntity(TileLinkMK1.class, new ResourceLocation(ProjectEX.MOD_ID, "personal_link"));
             GameRegistry.registerTileEntity(TileLinkMK2.class, new ResourceLocation(ProjectEX.MOD_ID, "refined_link"));
             GameRegistry.registerTileEntity(TileLinkMK3.class, new ResourceLocation(ProjectEX.MOD_ID, "compressed_refined_link"));
+            GameRegistry.registerTileEntity(TileTransmutationInterface.class, new ResourceLocation(ProjectEX.MOD_ID, "transmutation_interface"));
         }
 
         if (ProjectEXConfig.items.collectors) {
@@ -72,9 +74,8 @@ public class ProjectEXEventHandler {
             GameRegistry.registerTileEntity(TilePowerFlower.class, new ResourceLocation(ProjectEX.MOD_ID, "power_flower"));
         }
 
-        if (ProjectEXConfig.items.stone_table) {
+        if (ProjectEXConfig.items.stone_table)
             r.register(withName(new BlockStoneTable(), "stone_table"));
-        }
 
         if (ProjectEXConfig.items.alchemy_table) {
             r.register(withName(new BlockAlchemyTable(), "alchemy_table"));
@@ -91,28 +92,25 @@ public class ProjectEXEventHandler {
             r.register(new ItemBlock(ProjectEXBlocks.PERSONAL_LINK).setRegistryName("personal_link"));
             r.register(new ItemBlock(ProjectEXBlocks.REFINED_LINK).setRegistryName("refined_link"));
             r.register(new ItemBlock(ProjectEXBlocks.COMPRESSED_REFINED_LINK).setRegistryName("compressed_refined_link"));
+            r.register(new ItemBlock(ProjectEXBlocks.TRANSMUTATION_INTERFACE).setRegistryName("transmutation_interface"));
         }
 
-        if (ProjectEXConfig.items.collectors) {
+        if (ProjectEXConfig.items.collectors)
             r.register(new ItemBlockTier(ProjectEXBlocks.COLLECTOR).setRegistryName("collector"));
-        }
 
-        if (ProjectEXConfig.items.relays) {
+        if (ProjectEXConfig.items.relays)
             r.register(new ItemBlockTier(ProjectEXBlocks.RELAY).setRegistryName("relay"));
-        }
 
         if (ProjectEXConfig.items.power_flowers) {
             r.register(withName(new ItemCompressedCollector(), "compressed_collector"));
             r.register(new ItemBlockTier(ProjectEXBlocks.POWER_FLOWER).setRegistryName("power_flower"));
         }
 
-        if (ProjectEXConfig.items.stone_table) {
+        if (ProjectEXConfig.items.stone_table)
             r.register(withName(new ItemBlock(ProjectEXBlocks.STONE_TABLE), "stone_table"));
-        }
 
-        if (ProjectEXConfig.items.alchemy_table) {
+        if (ProjectEXConfig.items.alchemy_table)
             r.register(withName(new ItemBlock(ProjectEXBlocks.ALCHEMY_TABLE), "alchemy_table"));
-        }
 
         if (ProjectEXConfig.items.stars) {
             r.register(withName(new ItemMagnumStar(KleinStar.EnumKleinTier.EIN), "magnum_star_ein"));
@@ -131,23 +129,19 @@ public class ProjectEXEventHandler {
 
         r.register(withName(new ItemMatter(), "matter"));
 
-        if (ProjectEXConfig.items.clay_matter) {
+        if (ProjectEXConfig.items.clay_matter)
             r.register(withName(new Item(), "clay_matter").setTranslationKey(ProjectEX.MOD_ID + ".matter.clay"));
-        }
 
         r.register(withName(new Item(), "final_star_shard"));
 
-        if (ProjectEXConfig.items.final_star) {
+        if (ProjectEXConfig.items.final_star)
             r.register(withName(new ItemFinalStar(), "final_star"));
-        }
 
-        if (ProjectEXConfig.items.knowledge_sharing_book) {
+        if (ProjectEXConfig.items.knowledge_sharing_book)
             r.register(withName(new ItemKnowledgeSharingBook(), "knowledge_sharing_book"));
-        }
 
-        if (ProjectEXConfig.items.arcane_tablet) {
+        if (ProjectEXConfig.items.arcane_tablet)
             r.register(withName(new ItemArcaneTablet(), "arcane_tablet"));
-        }
     }
 
     @SubscribeEvent
@@ -158,9 +152,8 @@ public class ProjectEXEventHandler {
             for (int i = 0; i < event.craftMatrix.getSizeInventory(); i++) {
                 ItemStack stack = event.craftMatrix.getStackInSlot(i);
 
-                if (stack.getItem() instanceof IItemEmc) {
+                if (stack.getItem() instanceof IItemEmc)
                     star.addEmc(event.crafting, ((IItemEmc) stack.getItem()).getStoredEmc(stack));
-                }
             }
         }
     }

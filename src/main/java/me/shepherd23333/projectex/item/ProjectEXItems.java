@@ -14,6 +14,7 @@ public class ProjectEXItems {
     public static final Item PERSONAL_LINK = Items.AIR;
     public static final Item REFINED_LINK = Items.AIR;
     public static final Item COMPRESSED_REFINED_LINK = Items.AIR;
+    public static final Item TRANSMUTATION_INTERFACE = Items.AIR;
     public static final Item COLLECTOR = Items.AIR;
     public static final Item RELAY = Items.AIR;
     public static final Item POWER_FLOWER = Items.AIR;

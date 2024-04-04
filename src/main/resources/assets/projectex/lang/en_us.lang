@@ -8,6 +8,8 @@ tile.projectex.refined_link.name=Refined EMC Link
 tile.projectex.refined_link.tooltip=Same as Personal EMC Link, but has 1 input slot and 9 output slots. Designed to be used with Refined Storage-like systems. It also learns items from input slots.
 tile.projectex.compressed_refined_link.name=Compressed Refined EMC Link
 tile.projectex.compressed_refined_link.tooltip=Same as Refined EMC Link, but has 54 output slots.
+tile.projectex.transmutation_interface.name=Transmutation Interface
+tile.projectex.transmutation_interface.tooltip=Full knowledge!
 
 tile.projectex.collector.basic.name=Basic Collector [MK1]
 tile.projectex.collector.dark.name=Dark Matter Collector [MK2]

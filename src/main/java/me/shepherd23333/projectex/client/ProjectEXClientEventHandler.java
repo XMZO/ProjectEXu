@@ -45,6 +45,7 @@ public class ProjectEXClientEventHandler {
             addModel(ProjectEXItems.PERSONAL_LINK, "normal");
             addModel(ProjectEXItems.REFINED_LINK, "normal");
             addModel(ProjectEXItems.COMPRESSED_REFINED_LINK, "normal");
+            addModel(ProjectEXItems.TRANSMUTATION_INTERFACE, "normal");
         }
 
         for (EnumTier tier : EnumTier.VALUES) {

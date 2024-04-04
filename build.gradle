@@ -104,10 +104,9 @@ dependencies {
     }
 
     // Example of deobfuscating a dependency
-    // implementation rfg.deobf('curse.maven:had-enough-items-557549:4543375')
     implementation fileTree(dir: 'libs', includes: ['*.jar'])
     implementation rfg.deobf("curse.maven:had-enough-items-557549:${curse_hei}")
-
+    runtimeOnly "curse.maven:ae2uel-570458:${curse_ae2uel}"
 
     if (project.use_mixins.toBoolean()) {
         // Change your mixin refmap name here:

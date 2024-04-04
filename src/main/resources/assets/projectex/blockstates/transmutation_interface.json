@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "normal": {
+      "model": "projectex:transmutation_interface"
+    }
+  }
+}

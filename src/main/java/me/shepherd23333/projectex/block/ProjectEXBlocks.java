@@ -14,6 +14,7 @@ public class ProjectEXBlocks {
     public static final Block PERSONAL_LINK = Blocks.AIR;
     public static final Block REFINED_LINK = Blocks.AIR;
     public static final Block COMPRESSED_REFINED_LINK = Blocks.AIR;
+    public static final Block TRANSMUTATION_INTERFACE = Blocks.AIR;
     public static final Block COLLECTOR = Blocks.AIR;
     public static final Block RELAY = Blocks.AIR;
     public static final Block POWER_FLOWER = Blocks.AIR;

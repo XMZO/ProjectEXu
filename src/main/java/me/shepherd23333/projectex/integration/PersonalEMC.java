@@ -42,9 +42,8 @@ public class PersonalEMC {
 
     @Nullable
     public static IKnowledgeProvider get(@Nullable World world, @Nullable UUID id) {
-        if (world == null || id == null || id.getLeastSignificantBits() == 0L && id.getMostSignificantBits() == 0L) {
+        if (world == null || id == null || id.getLeastSignificantBits() == 0L && id.getMostSignificantBits() == 0L)
             return null;
-        }
 
         if (world.isRemote) {
             EntityPlayer player = ProjectEX.PROXY.getClientPlayer();
@@ -53,9 +52,8 @@ public class PersonalEMC {
 
         EntityPlayer player = world.getMinecraftServer().getPlayerList().getPlayerByUUID(id);
 
-        if (player != null) {
+        if (player != null)
             return get(player);
-        }
 
         OfflineKnowledgeProvider provider = OFFLINE_MAP.get(id);
 
@@ -72,9 +70,8 @@ public class PersonalEMC {
                     try (FileInputStream in = new FileInputStream(playerFile)) {
                         NBTTagCompound nbt = CompressedStreamTools.readCompressed(in).getCompoundTag("ForgeCaps").getCompoundTag(KnowledgeImpl.Provider.NAME.toString());
 
-                        if (!nbt.isEmpty()) {
+                        if (!nbt.isEmpty())
                             provider.deserializeNBT(nbt);
-                        }
                     } catch (Throwable ex) {
                         ex.printStackTrace();
                     }
@@ -96,9 +93,8 @@ public class PersonalEMC {
     public static void remove(IKnowledgeProvider knowledgeProvider, BigInteger remove) {
         BigInteger l = knowledgeProvider.getEmc().min(remove);
 
-        if (l.compareTo(BigInteger.ZERO) > 0) {
+        if (l.compareTo(BigInteger.ZERO) > 0)
             knowledgeProvider.setEmc(knowledgeProvider.getEmc().subtract(l));
-        }
     }
 
     @SubscribeEvent
