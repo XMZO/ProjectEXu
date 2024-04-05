@@ -49,7 +49,7 @@ public class TileTransmutationInterface extends TileEntity implements IItemHandl
         if (value.compareTo(BigInteger.ZERO) < 1)
             return 0;
 
-        return emc.divide(value).min(BigInteger.valueOf(Math.max(1, ProjectEXConfig.general.emc_link_max_out))).intValue();
+        return emc.divide(value).min(BigInteger.valueOf(ProjectEXConfig.general.emc_link_max_out)).intValue();
     }
 
     @Override
@@ -148,8 +148,8 @@ public class TileTransmutationInterface extends TileEntity implements IItemHandl
     @Nonnull
     @Override
     public ItemStack insertItem(int slot, @Nonnull ItemStack stack, boolean simulate) {
-        if (world.isRemote || slot != 0 || hasNoOwner() || !isItemValid(slot, stack) || stack.isEmpty())
-            return ItemStack.EMPTY;
+        if (world.isRemote || slot != 0 || hasNoOwner() || !isItemValid(slot, stack) || stack.isEmpty() || stack.hasTagCompound())
+            return stack;
         fetchKnowledge();
 
         int count = stack.getCount();
