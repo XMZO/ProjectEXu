@@ -1,3 +1,0 @@
-@javax.annotation.ParametersAreNonnullByDefault
-@mcp.MethodsReturnNonnullByDefault
-package me.shepherd23333.projectex.integration.jei;

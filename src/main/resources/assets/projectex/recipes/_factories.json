@@ -1,5 +1,5 @@
 {
   "conditions": {
-    "tome": "me.shepherd23333.projectex.item.TomeRecipeFactory"
+    "tome": "com.latmod.mods.projectex.item.TomeRecipeFactory"
   }
 }

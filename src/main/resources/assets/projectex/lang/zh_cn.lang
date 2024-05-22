@@ -12,6 +12,8 @@ tile.projectex.refined_link.tooltip=与个人EMC接口相同，但拥有1个输�
 tile.projectex.compressed_refined_link.name=压缩精致EMC接口
 tile.projectex.compressed_refined_link.tooltip=与精致EMC接口相同，但拥有54个输出槽。
 #Same as Refined EMC Link, but has 54 output slots.
+tile.projectex.transmutation_interface.name=交换接口
+tile.projectex.transmutation_interface.tooltip=全是知识!
 
 tile.projectex.collector.basic.name=基础收集器 [MK1]
 tile.projectex.collector.dark.name=暗物质收集器 [MK2]
