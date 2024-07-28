@@ -1,4 +1,4 @@
-# ProjectE 及其附属 非官方修改版
+# ProjectE及其附属 非官方修改版
   修改版原作者: [Shepherd23333](https://github.com/Shepherd23333)
 
 变化:
