@@ -19,3 +19,5 @@ With some breaking changes, it doesn't have any compatibility.
 * 增加了依赖使其能够顺利构建
 * 打包为jar让普通玩家能直接使用
 
+  需要搭配作者的 [等价交换重制版非官方版](https://github.com/Shepherd23333/ProjectEu) 使用，原版会直接报错，所以我也扔 releases 里了
+
